@@ -207,8 +207,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
   max-width: 100rem;
 }
 #hero:before {
@@ -928,18 +928,25 @@ section {
   }
 }
 
-
+/* 
 
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
-}
+} */
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
-
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -954,5 +961,5 @@ section.resume-section .resume-item .resume-date {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #149ddd;
 }
